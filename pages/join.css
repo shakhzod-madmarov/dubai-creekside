@@ -1,6 +1,11 @@
 body {
   background-color: #000;
-  padding: 150px 300px 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -30,7 +35,7 @@ body {
 .form-join {
   padding: 40px 10px 40px 12px;
   display: grid;
-  grid-template-columns: (1 1fr);
+  grid-template-columns: (2, 1fr);
   gap: 18px;
 }
 
@@ -69,19 +74,27 @@ body {
 
 .aside-join h1 {
   text-transform: capitalize;
+  width: 90%;
   font-size: 45px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
 
 .aside-join p {
+  width: 95%;
   padding: 20px;
   font-size: 16px;
   text-align: center;
 }
 
+.aside-join img {
+  width: 100%;
+}
+
 .sm-logo {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   width: 50%;
 }
@@ -92,4 +105,35 @@ body {
   display: flex;
   text-align: center;
   padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .about-join {
+    width: 50%;
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  .about-join {
+    width: 100%;
+  }
+
+  .sm-logo {
+    width: 60%;
+  }
+
+  .main-join {
+    width: 80%;
+    margin: 20px;
+  }
+
+  .form-join input {
+    width: 100%;
+  }
 }

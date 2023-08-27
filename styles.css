@@ -165,3 +165,187 @@ body {
 .link-download img {
   padding-left: 4px;
 }
+
+@media (max-width: 1180px) {
+  .brand-logo {
+    width: 15%;
+    height: 50%;
+  }
+
+  .nav-right {
+    width: 30%;
+    font-size: 12px;
+  }
+
+  .btn-apartments {
+    top: 210px;
+    left: 550px;
+  }
+
+  .btn-park {
+    top: 450px;
+    left: 200px;
+  }
+
+  .btn-mansions {
+    top: 510px;
+    right: 150px;
+  }
+
+  .btn-road {
+    top: 650px;
+    left: 500px;
+  }
+
+  .link-download {
+    top: 700px;
+    font-size: 15px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/home.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .brand-logo {
+    width: 10%;
+    padding: 0;
+  }
+
+  .brand-name {
+    width: 40%;
+  }
+
+  .brand-name h1 {
+    font-size: 13px;
+  }
+
+  .brand-name p {
+    font-size: 10px;
+  }
+
+  .nav-right {
+    width: 35%;
+    font-size: 10px;
+  }
+
+  .btn-apartments {
+    left: 420px;
+    top: 150px;
+    font-size: 12px;
+  }
+
+  .btn-park {
+    top: 330px;
+    font-size: 12px;
+  }
+
+  .btn-mansions {
+    top: 350px;
+    font-size: 12px;
+  }
+
+  .btn-road {
+    top: 450px;
+    left: 300px;
+    font-size: 12px;
+  }
+
+  .link-download {
+    font-size: 12px;
+    top: 500px;
+    padding-right: 0;
+    width: 22%;
+  }
+}
+
+@media (max-width: 740px) {
+  .nav-ul {
+    width: 100%;
+  }
+
+  .brand-logo {
+    height: 35px;
+  }
+
+  .sm-logo {
+    width: 35%;
+  }
+
+  .phone-number {
+    font-size: 15px;
+  }
+
+  .btn-apartments {
+    left: 330px;
+  }
+
+  .btn-park {
+    left: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home {
+    background-image: url("/images/home.png");
+    background-size: cover;
+  }
+
+  .brand-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+  }
+
+  .brand-logo {
+    margin: 0;
+    width: 20%;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: right;
+    width: 45%;
+  }
+
+  .sm-logo {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    height: 50%;
+    margin-bottom: 15px;
+  }
+
+  .btn-apartments {
+    left: 160px;
+    top: 230px;
+  }
+
+  .btn-road {
+    top: 750px;
+    left: 50px;
+  }
+
+  .btn-park {
+    top: 500px;
+    left: 5px;
+  }
+
+  .link-download {
+    top: 750px;
+    width: 50%;
+    left: 30px;
+    font-size: 12px;
+  }
+}

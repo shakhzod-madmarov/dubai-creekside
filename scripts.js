@@ -1,20 +1,20 @@
-const joinButton = document.querySelector(".btn-join");
-const closeButton = document.querySelector(".btn-close");
+const btnApartments = document.querySelector(".btn-apartments");
+const btnPark = document.querySelector(".btn-park");
+const btnMansions = document.querySelector(".btn-mansions");
+const btnRoad = document.querySelector(".btn-road");
 
-const goBackToHome = function () {
-  window.location.href = "/index.html";
-};
-
-joinButton.addEventListener("click", function () {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-
-  const message = `You have joined!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`;
-
-  alert(message);
-
-  goBackToHome();
+btnApartments.addEventListener("click", function () {
+  window.location.href = "/pages/apartments.html";
 });
 
-closeButton.addEventListener("click", goBackToHome);
+btnPark.addEventListener("click", function () {
+  window.location.href = "/pages/park.html";
+});
+
+btnMansions.addEventListener("click", function () {
+  window.location.href = "/pages/mansions.html";
+});
+
+btnRoad.addEventListener("click", function () {
+  window.location.href = "/pages/road.html";
+});

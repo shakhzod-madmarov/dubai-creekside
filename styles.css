@@ -349,3 +349,29 @@ body {
     font-size: 12px;
   }
 }
+
+@media (max-width: 390px) {
+  .navbar {
+    height: 21vh;
+  }
+
+  .btn-apartments {
+    top: 190px;
+  }
+
+  .btn-park {
+    top: 350px;
+  }
+
+  .btn-mansions {
+    top: 400px;
+  }
+
+  .btn-road {
+    top: 500px;
+  }
+
+  .link-download {
+    top: 520px;
+  }
+}
